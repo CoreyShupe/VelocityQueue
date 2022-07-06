@@ -26,17 +26,11 @@ import org.slf4j.Logger;
 public class VelocityQueue {
   private final ProxyServer server;
   private final Path directory;
-  private final Logger logger;
 
   @Inject
-  public VelocityQueue(ProxyServer server, @DataDirectory Path directory, Logger logger) {
+  public VelocityQueue(ProxyServer server, @DataDirectory Path directory) {
     this.server = server;
     this.directory = directory;
-    this.logger = logger;
-  }
-
-  public Logger getLogger() {
-    return logger;
   }
 
   @Subscribe
