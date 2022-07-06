@@ -11,7 +11,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import ninja.leaping.configurate.ConfigurationNode;
 import ninja.leaping.configurate.gson.GsonConfigurationLoader;
-import org.slf4j.Logger;
 
 @Plugin(
     id = "velocity_queue",
